@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Scout - Leave a Review</title>
+    <link rel="icon" type="image/png" href="Photos/Icons/0.5x/PitAsset%201%400.5x.png">
+    <link rel="stylesheet" href="Styles\style_main.css">
+    <link rel="stylesheet" href="Styles\submit_Style.css">
+    <link rel="stylesheet" href="Styles\bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="Home.html">
+                <img src="Photos\Icons\1x\Logo.png" alt="Site Logo">
+            </a>
+            <a href="Home.html" class="site-name">site scout</a>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a href="#discover">Discover</a>
+                <a href="#community">Community Favorites</a>
+                <a href="#top-picks">Top Picks</a>
+                <a href="#news">News</a>
+            </div>
+        </nav>
+        <div class="profile-button-container">
+            <button class="profile-button" onclick="window.location.href='profile.html'">Profile</button>
+        </div>
+        <div class="hamburger-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <h1 class="submit-review-title">Submit a Review</h1>
+    <div class="title">
+        <label for="review-title">Title:</label>
+            <br>
+        <input type="text" id="review-title" name="review-title" required>
+    </div>
+    <div class="review">
+        <label for="review">Your Review:</label>
+        <br>
+        <textarea id="review" name="review" rows="8" required></textarea>
+    </div>
+    <div class="upload-photo">
+        <label for="photo">Upload Photo</label>
+        <br>
+        <input type="file" id="photo" name="photo">
+    </div>
+        <div class="rating-container">
+            <h1>Rating</h1>
+            <div class="star-rating" id="star-rating">
+                <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+                <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+                <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+                <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+                <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+            </div>
+        </div>
+    </div>
+    
+    <div class="amenities-section">
+        <div class="amenities">
+            <h3>Amenities:</h3>
+            <div class="checkbox-group">
+                <div class="hiking-trails">
+                    <input type="checkbox" id="hiking-trails" name="amenities" value="Hiking Trails">
+                    <label for="hiking-trails">Hiking Trails</label>
+                </div>
+                <div class="fishing">
+                    <input type="checkbox" id="fishing" name="amenities" value="Fishing">
+                    <label for="fishing">Fishing</label>
+                </div>
+                <div class="swimming">
+                    <input type="checkbox" id="swimming" name="amenities" value="Swimming">
+                    <label for="swimming">Swimming</label>
+                </div>
+                <div class="playgrounds">
+                    <input type="checkbox" id="playgrounds" name="amenities" value="Playgrounds">
+                    <label for="playgrounds">Playgrounds</label>
+                </div>
+                <div class="picnic-areas">
+                    <input type="checkbox" id="picnic-areas" name="amenities" value="Picnic Areas">
+                    <label for="picnic-areas">Picnic Areas</label>
+                </div>
+                
+                <div class="pet-friendly">
+                    <input type="checkbox" id="pet-friendly" name="amenities" value="Pet-Friendly">
+                    <label for="pet-friendly">Pet-Friendly</label>
+                </div>
+                
+                <div class="wi-fi">
+                    <input type="checkbox" id="wi-fi" name="amenities" value="Wi-Fi">
+                    <label for="wi-fi">Wi-Fi</label>
+                </div>
+                
+                <div class="boat-ramps">
+                    <input type="checkbox" id="boat-ramps" name="amenities" value="Boat Ramps">
+                    <label for="boat-ramps">Boat Ramps</label>
+                </div>
+            </div>
+        </div>
+        <div class="facilities">
+            <h3>Facilities:</h3>
+            <div class="checkbox-group">
+                <div class="electric-hookups">
+                    <input type="checkbox" id="electric-hookups" name="amenities" value="Electric Hookups">
+                    <label for="electric-hookups">Electric Hookups</label>
+                </div>
+                <div class="water-hookups">
+                    <input type="checkbox" id="water-hookups" name="amenities" value="Water Hookups">
+                    <label for="water-hookups">Water Hookups</label>
+                </div>
+                
+                <div class="showers">
+                    <input type="checkbox" id="showers" name="amenities" value="Showers">
+                    <label for="showers">Showers</label>
+                </div>
+                
+                <div class="laundry">
+                    <input type="checkbox" id="laundry" name="amenities" value="Laundry">
+                    <label for="laundry">Laundry</label>
+                </div>
+                
+                <div class="camp-store">
+                    <input type="checkbox" id="camp-store" name="amenities" value="Camp Store">
+                    <label for="camp-store">Camp Store</label>
+                </div>
+                
+                <div class="fire-pits-grills">
+                    <input type="checkbox" id="fire-pits-grills" name="amenities" value="Fire Pits/Grills">
+                    <label for="fire-pits-grills">Fire Pits/Grills</label>
+                </div>
+                
+                <div class="dump-stations">
+                    <input type="checkbox" id="dump-stations" name="amenities" value="Dump Stations">
+                    <label for="dump-stations">Dump Stations</label>
+                </div>
+                
+                <div class="visitor-centers">
+                    <input type="checkbox" id="visitor-centers" name="amenities" value="Visitor Centers">
+                    <label for="visitor-centers">Visitor Centers</label>
+                </div>
+                
+                <div class="campfire-rings">
+                    <input type="checkbox" id="campfire-rings" name="amenities" value="Campfire Rings">
+                    <label for="campfire-rings">Campfire Rings</label>
+                </div>
+                
+                <div class="water-stations">
+                    <input type="checkbox" id="water-stations" name="amenities" value="Water Stations">
+                    <label for="water-stations">Water Stations</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="acknowledge">
+        <input type="checkbox" id="acknowledge" name="acknowledge" required>
+        <label for="acknowledge">By checking this box, I acknowledge that I have read and agree to abide by the terms and conditions of this camping review platform. I confirm that the information provided in my review is accurate, and I grant permission for it to be shared publicly on the platform. I understand that any inappropriate or spam content will be subject to removal.</label>
+    </div>
+    <div class="submit-button-container">
+        <button type="submit" class="submit-button">Submit</button>
+    </div>
+    <footer>
+        <div class="logo-container">
+            <a href="Home.html">
+                <img src="Photos\Icons\0.5x\PitAsset 1@0.5x.png" alt="Site Logo">
+            </a>
+            <a href="Home.html" class="site-name"></a>
+        </div>
+        <div class="nav-container">
+            <a href="#discover">Discover</a>
+            <a href="#community">Community</a>
+            <a href="#top-picks">Top Picks</a>
+            <a href="#news">News</a>
+        </div>
+    </footer>
+</body>    
+</html>

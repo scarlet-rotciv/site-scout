@@ -1,0 +1,128 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.left-column {
+    padding: 40px 20px 40px 40px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+.right-column {
+    grid-column: 2 / span 2;
+    padding: 40px 40px 40px 20px;
+
+}
+#profile-picure img {
+    width: 400px; 
+    height: auto; 
+    border-radius: 12px;
+}
+ #section-header{
+    color: #4D5934;
+    margin-bottom: 20px;
+}
+#submissions-header {
+  border-bottom: 4px solid #F25C05;
+  margin-top: 20px;
+}
+.submission-card img {
+  max-width: 200px;
+  max-height: auto;
+  border-radius: 20%;
+}
+#places-been-header {
+    border-bottom: 4px solid #F25C05;
+}
+#piwtg-header {
+    border-bottom: 4px solid #F25C05;
+}
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 300px;
+    max-height: 45%;
+    transition: transform 0.3s;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card a {
+    text-decoration: none;
+    color: #731702; 
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+  .sub-title {
+    color: #4D5934;
+    font-weight: bold;
+  }
+  .pib-container {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap:wrap ;
+    justify-content:space-between;
+  }
+  .piwtg-container {
+    display: flex;
+    flex-direction: row ;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+  }
+.view-all-button-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+  .view-all-button {
+    background-color: #03738C; 
+    color: #ffffff; 
+    border: none; 
+    border-radius: 8px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    margin: 20px 0px 20px 20px;
+    width: 400px;
+    
+}
+.view-all-button:hover {
+    background-color: #50bcd4; 
+}
+
+
+  @media screen and (max-width: 860px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .left-column {
+        padding: 40px 20px 40px 40px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        max-width: 80%;
+    }
+    .right-column {
+        padding: 40px 40px 40px 20px;
+      }
+      .pib-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .piwtg-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+.view-all-button-container {
+  display: flex;
+  justify-content: center;
+}
+  }

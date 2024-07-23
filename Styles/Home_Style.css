@@ -1,0 +1,151 @@
+.section_header {
+    display: flex;
+    flex-direction: column;
+    color: #4D5934; 
+    align-content: center;
+    flex-wrap: wrap;
+}
+.headers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#menu {
+    display: none;
+}
+.card {
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 10px;
+    max-width: 300px;
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card a {
+    text-decoration: none;
+    color: #731702; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.sub-title {
+    color: #02735E;
+    font-weight: bold;
+}
+#explore-parks{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    max-width: 100%;
+}
+#state-camps{
+    display: flex;
+    gap: 20px;
+    max-width: 100%;
+}
+#featured-camps{
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+}
+.full-width-card {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+.full-width-card a {
+    text-decoration: none;
+    color: #731702; 
+}
+.full-width-card:hover:hover {
+    transform: scale(1.01);
+}
+.full-width-card img {
+    width: 100%;
+    height: auto;
+}
+.full-width-card-news {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin: 10px;
+    padding-top: 2px;
+    padding-left: 4px;
+    transition: transform 0.3s;
+}
+.full-width-card-news a {
+    text-decoration: none;
+    color: #731702; 
+}
+.full-width-card-news:hover:hover {
+    transform: scale(1.01);
+}
+.view-more-button-container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+.view-more-button {
+      background-color: #03738C; 
+      color: #ffffff; 
+      border: none; 
+      border-radius: 8px;
+      padding: 10px 20px; 
+      font-size: 16px; 
+      cursor: pointer; 
+      margin: 20px 10px 20px 20px;
+      width: 400px;
+      
+  }
+  .view-more-button:hover {
+      background-color: #50bcd4; 
+  }
+/* Default styles */
+
+@media only screen and (max-width: 1345px) {
+    #explore-parks{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #state-camps{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media only screen and (max-width: 720px) {
+    #explore-parks{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    #state-camps{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .comunity-filter {
+        display: none;
+    }
+    #community h3 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #explore-parks{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    #state-camps{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}
+

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Scout - Search</title>
+    <link rel="icon" type="image/png" href="Photos/Icons/0.5x/PitAsset%201%400.5x.png">
+    <link rel="stylesheet" href="Styles\style_main.css">
+    <link rel="stylesheet" href="Styles\search_Style.css">
+    <link rel="stylesheet" href="Styles\bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="Home.html">
+                <img src="Photos\Icons\1x\Logo.png" alt="Site Logo">
+            </a>
+            <a href="Home.html" class="site-name">site scout</a>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a href="#discover">Discover</a>
+                <a href="#community">Community Favorites</a>
+                <a href="#top-picks">Top Picks</a>
+                <a href="#news">News</a>
+            </div>
+        </nav>
+        <div class="profile-button-container">
+            <button class="profile-button" onclick="window.location.href='profile.html'">Sign in</button>
+            <button class="join-button">Join</button>
+        </div>
+        <div class="hamburger-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header> 
+    <div class="search-container">
+        <input type="text" placeholder="Find Your Next Adventure!">
+        <a href="search.html"><button type="button">Search</button></a>
+    </div>
+    <main class="Main">
+        <body>
+            <div class="filters">
+                <h3>Filter</h3>
+                    <label for="location" class="filters-label">Location:</label>
+                        <select id="location">
+                            <option value="country">Country</option>
+                            <option value="state">State</option>
+                            <option value="city">City</option>
+                        </select>
+                    <label for="campsite-type" class="filters-label">Campsite Type:</label>
+                        <select id="campsite-type">
+                            <option value="tent">Tent Camping</option>
+                            <option value="rv">RV Camping</option>
+                            <option value="back-country">Back Country</option>
+                            <option value="BLM">BLM</option>
+                            <option value="tent">Tent Camping</option>
+                            <option value="public-land">Public Land</option>
+                        </select>
+                    <label for="facilities" class="filters-label">Facilities:</label>
+                        <div class="filters-item">
+                            <input type="checkbox" id="electric-hookups">
+                                <label for="electric-hookups">Electric Hookups</label>
+                                    <br>
+                            <input type="checkbox" id="water-hookups">
+                                <label for="water-hookups">Water Hookups</label>                                
+                                    <br>
+                            <input type="checkbox" id="Showers">
+                                <label for="Showers">Showers</label>
+                                    <br>
+                            <input type="checkbox" id="electric-hookups">
+                                <label for="electric-hookups">Electric Hookups</label>
+                                    <br>
+                            <input type="checkbox" id="Laundry">
+                                    <label for="Laundry">Laundry</label>
+                                        <br>
+                            <input type="checkbox" id="canp-store"> 
+                                <label for="camp-store">Camp Store</label>      
+                                    <br>    
+                                <input type="checkbox" id="fire-pits-grills">
+                                    <label for="fire-pits-grills">Fire Pits/Grills</label>
+                                        <br>
+                                <input type="checkbox" id="dump-stations">
+                                    <label for="dump-stations">Dump Stations</label>
+                                        <br>
+                            <input type="checkbox" id="visitor-centers">
+                                <label for="visitor-centers">Visitor Centers</label>
+                                    <br>
+                            <input type="checkbox" id="campfire-rings">
+                                <label for="campfire-rings">Campfire Rings</label>
+                                    <br>
+                                <input type="checkbox" id="drinking-water">
+                                    <label for="drinking-water">Water Stations</label>
+                                        <br>                                                            
+                        </div>
+                    <label for="amenities" class="filters-label">Amenities:</label>
+                        <div class="amenities-item">
+                            <input type="checkbox" id="hiking-trails">
+                                <label for="hiking-trails">Hiking Trails</label>
+                                    <br>
+                            <input type="checkbox" id="fishing">
+                                <label for="fishing">Fishing</label>
+                                    <br>
+                            <input type="checkbox" id="swimming">
+                                <label for="swimming">Swimming</label>
+                                    <br>
+                            <input type="checkbox" id="playgrounds">
+                                <label for="playgrounds">Playgrounds</label>
+                                    <br>
+                            <input type="checkbox" id="picnic-areas">
+                                <label for="picnic-areas">Picnic Areas</label>
+                                    <br>
+                            <input type="checkbox" id="pet-friendly">
+                                <label for="pet-friendly">Pet-Friendly</label>
+                                    <br>
+                            <input type="checkbox" id="wifi">
+                                <label for="wifi">Wi-Fi</label>
+                                    <br>
+                            <input type="checkbox" id="boat-ramps">
+                                <label for="boat-ramps">Boat Ramps</label>
+                                    <br>                
+                        </div>
+                    <label for="rating" class="filters-label">Minimum Rating:</label>
+                        <select id="rating">
+                            <option value="5-stars">5 Stars</option>
+                            <option value="4-stars">4 Stars</option>
+                            <option value="5-stars">3 Stars</option>
+                            <option value="4-stars">2 Stars</option>
+                            <option value="5-stars">1 Stars</option>
+                        </select>
+                    <label for="price-range" class="filters-label">Price Range:</label>
+                        <input type="range" id="price-range" min="0" max="100" value="50">
+                            <div class="dollar-container">
+                                <p id="low">$</p>
+                                <p id="medium">$$</p>
+                                <p id="high">$$$</p>
+                            </div>
+                    <label for="accessibility" class="filters-label">Accessibility:</label>
+                        <div class="accessibility-items">
+                            <input type="checkbox" id="wheelchair-accessible">
+                                <label for="wheelchair-accessible">Wheelchair Accessible</label>
+                                    <br>
+                            <input type="checkbox" id="ada-compliant">
+                                <label for="ada-compliant">ADA Compliant</label>
+                                
+                        </div>
+            </div> 
+            <div class="results">
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Colter_Bay\colter_bay_1.jpg" alt="Colter Bay Campground">
+                            <div class="card-contnet">
+                                <h3>Colter Bay Campground</h3>
+                                <p class="sub-title">Grand Teeton National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Squ_NP\LPCG.jpg" alt="Lodgepole Campground">
+                            <div class="card-contnet">
+                                <h3>Lodgepole Campground</h3>
+                                <p class="sub-title">Sequoia National Park</p>
+                            </div>
+                    </a>
+                </div> 
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Junbo_Rock\JR1.jpg" alt="Jumbo Rocks Campground">
+                            <div class="card-contnet">
+                                <h3>Jumbo Rocks Campground</h3>
+                                <p class="sub-title">Joshua Tree National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\JDSCG\JDSCG.jpg" alt="Jedidiah Smith Campground">
+                            <div class="card-contnet">
+                                <h3>Jedidiah Smith Campground</h3>
+                                <p class="sub-title">Redwood National Park</p>
+                            </div>
+                    </a>
+                </div>          
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Jenny_lake\jenny-lake-cg.jpg" alt="jenny-lake-campgorund">
+                            <div class="card-contnet">
+                                <h3>Jenny Lake Campground</h3>
+                                <p class="sub-title">Grand Teeton National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Chisos_Basin\Chisos_Basin_Campground.jpg" alt="Chisos Basin Campground">
+                            <div class="card-contnet">
+                                <h3>Chisos Basin Campground</h3>
+                                <p class="sub-title">Big Bend National Park</p>
+                            </div>
+                    </a>
+                </div>          
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Acadia National Park\Blackwoods2.jpg" alt="Blackwoods Campground">
+                        <div class="card-contnet">
+                            <h3>Blackwoods Campground</h3>
+                            <p class="sub-title">Acadia National Park</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\GSMNP\Greenbrier_Campground_2.png" alt="Greenbrier Campground">
+                        <div class="card-contnet">
+                            <h3>Greenbrier Campground</h3>
+                            <p class="sub-title">Great Smoky National Mountains National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Arches\Devils_garden_campground_2.png" alt="Devils Garden Campground">
+                        <div class="card-contnet">
+                            <h3>Devils Garden Campground</h3>
+                            <p class="sub-title">Arches National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Mathe_Camp\Mather_CG.jpg" alt="Mather Campground - South Rim">
+                            <div class="card-contnet">
+                                <h3>Mather Campground - South Rim</h3>
+                                <p class="sub-title">Grand Canyon National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Pinacles\pinacles-CG.jpg" alt="Pinnacles Campground">
+                            <div class="card-contnet">
+                                <h3>Pinnacles<br>Campground</h3>
+                                <p class="sub-title">Pinnacles National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Bay_Brigde_CG\BBCG.jpg" alt="Bridge Bay Campground">
+                                    <div class="card-contnet">
+                                        <h3>Bridge Bay Campground</h3>
+                                        <p class="sub-title">Yellowstone National Park</p>
+                            </div>
+                    </a>
+                </div>
+            </div>    
+    </main>   
+    <footer>
+        <div class="logo-container">
+
+            <a href="Home.html">
+                <img src="Photos\Icons\0.5x\PitAsset 1@0.5x.png" alt="Site Logo">
+            </a>
+            <a href="Home.html" class="site-name"></a>
+        </div>
+        <div class="nav-container">
+            <a href="#discover">Discover</a>
+            <a href="#community">Community</a>
+            <a href="#top-picks">Top Picks</a>
+            <a href="#news">News</a>
+        </div>
+    </footer>
+</body>
+
+</html>

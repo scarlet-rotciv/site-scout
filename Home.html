@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Scout</title>
+    <link rel="icon" type="image/png" href="Photos/Icons/0.5x/PitAsset%201%400.5x.png">
+    <link rel="stylesheet" href="Styles\style_main.css">
+    <link rel="stylesheet" href="Styles\Home_Style.css">
+    <link rel="stylesheet" href="Styles\bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="Home.html">
+                <img src="Photos\Icons\1x\Logo.png" alt="Site Logo">
+            </a>
+            <a href="Home.html" class="site-name">site scout</a>
+        </div>
+        <nav>
+            <div class="nav-container">
+                <a href="#discover">Discover</a>
+                <a href="#community">Community Favorites</a>
+                <a href="#top-picks">Top Picks</a>
+                <a href="#news">News</a>
+            </div>
+        </nav>
+        <nav id="menu">
+            <a href="#discover">Discover</a>
+            <a href="#community">Community</a>
+            <a href="#top-picks">Top Picks</a>
+            <a href="#news">News</a>
+        </nav>
+        <div class="profile-button-container">
+                <button class="profile-button" onclick="window.location.href='profile.html'">Sign in</button>
+            <button class="join-button">Join</button>
+        </div>
+        <div class="hamburger-icon">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div class="search-container">
+        <input type="text" placeholder="Find Your Next Adventure!">
+        <a href="search.html"><button type="button">Search</button></a>
+    </div>
+    <section class="section_header" id="discover">
+        <div class="headers-container">
+            <h2 class="headers">Discover Popular Campgrounds</h2>
+             <h4 class="headers">Explore National Parks</h4>
+        </div>
+             <section id="explore-parks">
+                <div class="card">
+                    <a href="">
+                        <img src="Photos\National Parks\Barns_grand_tetons.jpg" alt="Grand Teeton National Park">
+                            <div class="card-contnet">
+                                <h3>Grand Teeton National Park</h3>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <img src="Photos\National Parks\GrandCanyon.jpg">
+                            <div class="card-contnet">
+                                <h3>Grand Canyon National Park</h3>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <img src="Photos\National Parks\hawaiiVocanoes.jpg">
+                            <div class="card-contnet">
+                                <h3>Hawai'i Volcanoes Nationmal Park</h3>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="">
+                        <img src="Photos\National Parks\DryTortugasNationalPark.jpg">
+                            <div class="card-contnet">
+                                <h3>Dry Tortugas National Park</h3>
+                            </div>
+                    </a>
+                </div>
+            </section>
+                <h4>Explore Campgrounds Within Your State</h4>
+                <label for="state">Select Your State:</label>
+                <select id="state" name="state">
+                    <option value="alabama">Select</option>
+                    <option value="alabama">Alabama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="arkansas">Arkansas</option>
+                    <option value="california">California</option>
+                    <option value="colorado">Colorado</option>
+                    <option value="connecticut">Connecticut</option>
+                    <option value="delaware">Delaware</option>
+                    <option value="florida">Florida</option>
+                    <option value="georgia">Georgia</option>
+                    <option value="hawaii">Hawaii</option>
+                    <option value="idaho">Idaho</option>
+                    <option value="illinois">Illinois</option>
+                    <option value="indiana">Indiana</option>
+                    <option value="iowa">Iowa</option>
+                    <option value="kansas">Kansas</option>
+                    <option value="kentucky">Kentucky</option>
+                    <option value="louisiana">Louisiana</option>
+                    <option value="maine">Maine</option>
+                    <option value="maryland">Maryland</option>
+                    <option value="massachusetts">Massachusetts</option>
+                    <option value="michigan">Michigan</option>
+                    <option value="minnesota">Minnesota</option>
+                    <option value="mississippi">Mississippi</option>
+                    <option value="missouri">Missouri</option>
+                    <option value="montana">Montana</option>
+                    <option value="nebraska">Nebraska</option>
+                    <option value="nevada">Nevada</option>
+                    <option value="new-hampshire">New Hampshire</option>
+                    <option value="new-jersey">New Jersey</option>
+                    <option value="new-mexico">New Mexico</option>
+                    <option value="new-york">New York</option>
+                    <option value="north-carolina">North Carolina</option>
+                    <option value="north-dakota">North Dakota</option>
+                    <option value="ohio">Ohio</option>
+                    <option value="oklahoma">Oklahoma</option>
+                    <option value="oregon">Oregon</option>
+                    <option value="pennsylvania">Pennsylvania</option>
+                    <option value="rhode-island">Rhode Island</option>
+                    <option value="south-carolina">South Carolina</option>
+                    <option value="south-dakota">South Dakota</option>
+                    <option value="tennessee">Tennessee</option>
+                    <option value="texas">Texas</option>
+                    <option value="utah">Utah</option>
+                    <option value="vermont">Vermont</option>
+                    <option value="virginia">Virginia</option>
+                    <option value="washington">Washington</option>
+                    <option value="west-virginia">West Virginia</option>
+                    <option value="wisconsin">Wisconsin</option>
+                    <option value="wyoming">Wyoming</option>
+                </select>
+                <Section id="state-camps">
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Squ_NP\LPCG.jpg" alt="Lodgepole Campground">
+                            <div class="card-contnet">
+                                <h3>Lodgepole Campground</h3>
+                                <p class="sub-title">Sequoia National Park</p>
+                            </div>
+                    </a>
+                </div>  
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Camp_4\Camp4Main.jpg" alt="Camp 4">
+                            <div class="card-contnet">
+                                <h3>Camp 4</h3>
+                                <p class="sub-title">Yosemite National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\Junbo_Rock\JR1.jpg" alt="Jumbo Rocks Campground">
+                            <div class="card-contnet">
+                                <h3>Jumbo Rocks Campground</h3>
+                                <p class="sub-title">Joshua Tree National Park</p>
+                            </div>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="Campsite.html">
+                        <img src="Photos\Campsites\JDSCG\JDSCG.jpg" alt="Jedidiah Smith Campground">
+                            <div class="card-contnet">
+                                <h3>Jedidiah Smith Campground</h3>
+                                <p class="sub-title">Redwood National Park</p>
+                            </div>
+                    </a>
+                </div>          
+            </section>
+    </section>
+    <section class="section_header" id="community">
+        <h2>Community Favorites</h2>
+        <h3 >Filter</h3>
+        <div class="comunity-filter">
+            <label for="state">State:</label>
+            <select id="state" name="state">
+                <option value="alabama">Select</option>
+                <option value="alabama">Alabama</option>
+                <option value="alaska">Alaska</option>
+                <option value="arizona">Arizona</option>
+                <option value="arkansas">Arkansas</option>
+                <option value="california">California</option>
+                <option value="colorado">Colorado</option>
+                <option value="connecticut">Connecticut</option>
+                <option value="delaware">Delaware</option>
+                <option value="florida">Florida</option>
+                <option value="georgia">Georgia</option>
+                <option value="hawaii">Hawaii</option>
+                <option value="idaho">Idaho</option>
+                <option value="illinois">Illinois</option>
+                <option value="indiana">Indiana</option>
+                <option value="iowa">Iowa</option>
+                <option value="kansas">Kansas</option>
+                <option value="kentucky">Kentucky</option>
+                <option value="louisiana">Louisiana</option>
+                <option value="maine">Maine</option>
+                <option value="maryland">Maryland</option>
+                <option value="massachusetts">Massachusetts</option>
+                <option value="michigan">Michigan</option>
+                <option value="minnesota">Minnesota</option>
+                <option value="mississippi">Mississippi</option>
+                <option value="missouri">Missouri</option>
+                <option value="montana">Montana</option>
+                <option value="nebraska">Nebraska</option>
+                <option value="nevada">Nevada</option>
+                <option value="new-hampshire">New Hampshire</option>
+                <option value="new-jersey">New Jersey</option>
+                <option value="new-mexico">New Mexico</option>
+                <option value="new-york">New York</option>
+                <option value="north-carolina">North Carolina</option>
+                <option value="north-dakota">North Dakota</option>
+                <option value="ohio">Ohio</option>
+                <option value="oklahoma">Oklahoma</option>
+                <option value="oregon">Oregon</option>
+                <option value="pennsylvania">Pennsylvania</option>
+                <option value="rhode-island">Rhode Island</option>
+                <option value="south-carolina">South Carolina</option>
+                <option value="south-dakota">South Dakota</option>
+                <option value="tennessee">Tennessee</option>
+                <option value="texas">Texas</option>
+                <option value="utah">Utah</option>
+                <option value="vermont">Vermont</option>
+                <option value="virginia">Virginia</option>
+                <option value="washington">Washington</option>
+                <option value="west-virginia">West Virginia</option>
+                <option value="wisconsin">Wisconsin</option>
+                <option value="wyoming">Wyoming</option>
+            </select>
+        <label for="nationalParkDropdown">Park:</label>
+            <select id="nationalParkDropdown" name="nationalParkDropdown">
+                <option value="Select">Select</option>
+                <option value="acadia">Acadia National Park</option>
+                <option value="american-samoa">American Samoa National Park</option>
+                <option value="arches">Arches National Park</option>
+                <option value="badlands">Badlands National Park</option>
+                <option value="big-bend">Big Bend National Park</option>
+                <option value="biscayne">Biscayne National Park</option>
+                <option value="black-canyon">Black Canyon of the Gunnison National Park</option>
+                <option value="bryce-canyon">Bryce Canyon National Park</option>
+                <option value="capitol-reef">Capitol Reef National Park</option>
+                <option value="carlsbad-caverns">Carlsbad Caverns National Park</option>
+                <option value="channel-islands">Channel Islands National Park</option>
+                <option value="congaree">Congaree National Park</option>
+                <option value="crater-lake">Crater Lake National Park</option>
+                <option value="cuyahoga-valley">Cuyahoga Valley National Park</option>
+                <option value="death-valley">Death Valley National Park</option>
+                <option value="denali">Denali National Park</option>
+                <option value="dry-tortugas">Dry Tortugas National Park</option>
+                <option value="everglades">Everglades National Park</option>
+                <option value="gates-of-the-arctic">Gates of the Arctic National Park</option>
+                <option value="glacier">Glacier National Park</option>
+                <option value="grand-canyon">Grand Canyon National Park</option>
+                <option value="grand-teton">Grand Teton National Park</option>
+                <option value="great-basin">Great Basin National Park</option>
+                <option value="great-sand-dunes">Great Sand Dunes National Park</option>
+                <option value="great-smoky-mountains">Great Smoky Mountains National Park</option>
+                <option value="guadalupe-mountains">Guadalupe Mountains National Park</option>
+                <option value="haleakala">Haleakala National Park</option>
+                <option value="hawaii-volcanoes">Hawai'i Volcanoes National Park</option>
+                <option value="hot-springs">Hot Springs National Park</option>
+                <option value="isle-royale">Isle Royale National Park</option>
+                <option value="joshua-tree">Joshua Tree National Park</option>
+                <option value="katmai">Katmai National Park</option>
+                <option value="kenai-fjords">Kenai Fjords National Park</option>
+                <option value="kings-canyon">Kings Canyon National Park</option>
+                <option value="kobuk-valley">Kobuk Valley National Park</option>
+                <option value="lake-clark">Lake Clark National Park</option>
+                <option value="lassen-volcanic">Lassen Volcanic National Park</option>
+                <option value="mammoth-cave">Mammoth Cave National Park</option>
+                <option value="mesa-verde">Mesa Verde National Park</option>
+                <option value="mount-rainier">Mount Rainier National Park</option>
+                <option value="north-cascades">North Cascades National Park</option>
+                <option value="olympic">Olympic National Park</option>
+                <option value="petrified-forest">Petrified Forest National Park</option>
+                <option value="pinnacles">Pinnacles National Park</option>
+                <option value="redwood">Redwood National and State Parks</option>
+                <option value="rocky-mountain">Rocky Mountain National Park</option>
+                <option value="saguaro">Saguaro National Park</option>
+                <option value="sequoia">Sequoia National Park</option>
+                <option value="shenandoah">Shenandoah National Park</option>
+                <option value="theodore-roosevelt">Theodore Roosevelt National Park</option>
+                <option value="virgin-islands">Virgin Islands National Park</option>
+                <option value="voyageurs">Voyageurs National Park</option>
+                <option value="wind-cave">Wind Cave National Park</option>
+                <option value="wrangell-st-elias">Wrangell-St. Elias National Park</option>
+                <option value="yellowstone">Yellowstone National Park</option>
+                <option value="yosemite">Yosemite National Park</option>
+                <option value="zion">Zion National Park</option>
+            </select>
+            <label for="Timeframe">Top:</label>
+            <select id="TimeframeDropdown" name="TimeframeParkDropdown">
+                <option value="Select">Today</option>
+                <option value="Select">This Week</option>
+                <option value="Select">This Month</option>
+                <option value="Select">This Year</option>
+                <option value="Select">All Time</option>
+            </select>    
+        </div>
+        <Section id="state-camps">
+            <div class="card">
+                <a href="Campsite.html">
+                    <img src="Photos\Campsites\Colter_Bay\colter_bay_1.jpg" alt="Colter Bay Campground">
+                        <div class="card-contnet">
+                            <h3>Colter Bay Campground</h3>
+                            <p class="sub-title">Grand Teeton National Park</p>
+                        </div>
+                </a>
+            </div>  
+            <div class="card">
+                <a href="Campsite.html">
+                    <img src="Photos\Campsites\Jenny_lake\jenny-lake-cg.jpg" alt="jenny-lake-campgorund">
+                        <div class="card-contnet">
+                            <h3>Jenny Lake Campground</h3>
+                            <p class="sub-title">Grand Teeton National Park</p>
+                        </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Campsite.html">
+                    <img src="Photos\Campsites\Junbo_Rock\JR1.jpg" alt="Junbo Rocks Campground">
+                        <div class="card-contnet">
+                            <h3>Jumbo Rocks Campground</h3>
+                            <p class="sub-title">Joshua Tree national Park</p>
+                        </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="Campsite.html">
+                    <img src="Photos\Campsites\Chisos_Basin\Chisos_Basin_Campground.jpg" alt="Chisos Basin Campground">
+                        <div class="card-contnet">
+                            <h3>Chisos Basin Campground</h3>
+                            <p class="sub-title">Big Bend National Park</p>
+                        </div>
+                </a>
+            </div>          
+        </section>
+    </section>    
+    <section class="section_header" id="news">
+        <h2>News and Articles</h2>
+        <div class="full-width-card-news">
+            <a href="https://www.nps.gov/bicy/learn/news/big-cypress-national-preserve-issues-temporary-area-closure-for-interceptor-prescribed-fire.htm">
+                    <div class="card-contnet">
+                        <h3>Big Cypress National Preserve Issues Temporary Area Closure for Interceptor Prescribed Fire</h3>
+                        <p class="sub-title">Big Cypress National Preserve has issued a temporary trail closure . . .</p>
+                    </div>
+            </a>
+        </div>
+        <div class="full-width-card-news">
+            <a href="https://www.nps.gov/orgs/1651/ira-money-for-ner.htm">
+                    <div class="card-contnet">
+                        <h3>$17 million in Inflation Reduction Act Funding towards safeguarding forests, fish, and marshes in the Northeast</h3>
+                        <p class="sub-title">On February 27, the National Park Service announced it will invest $195 million in Inflation Reduction Act funding . . .</p>
+                    </div>
+            </a>
+        </div>
+        <div class="full-width-card-news">
+            <a href="https://www.nps.gov/lavo/learn/news/reservations-required-at-butte-lake-campground.htm">
+                    <div class="card-contnet">
+                        <h3>Reservations Required at Butte Lake Campground</h3>
+                        <p class="sub-title">MINERAL, CA — Reservations will be required for all campsites at Butte Lake Campground in Lassen Volcanic National Park. . .</p>
+                    </div>
+            </a>
+        </div>
+        <div class="full-width-card-news">
+            <a href="https://www.nps.gov/drto/learn/news/hms-tyger-identification.htm">
+                    <div class="card-contnet">
+                        <h3>National Park Service archeologists identify sunken British warship in Dry Tortugas National Park</h3>
+                        <p class="sub-title">KEY WEST, Fla. – National Park Service archeologists identified the archeological remains of HMS Tyger, an 18th century British warship, within the boundaries of Dry Tortugas National Park. Built in 1647 . . .</p>
+                    </div>
+            </a>
+        </div>
+        <div class="view-more-button-container">
+            <button class="view-more-button">View More</button> 
+        </div>        
+    </section>
+    <footer>
+        <div class="logo-container">
+            <a href="Home.html">
+                <img src="Photos\Icons\0.5x\PitAsset 1@0.5x.png" alt="Site Logo">
+            </a>
+            <a href="Home.html" class="site-name"></a>
+        </div>
+        <div class="nav-container">
+            <a href="#discover">Discover</a>
+            <a href="#community">Community</a>
+            <a href="#top-picks">Top Picks</a>
+            <a href="#news">News</a>
+        </div>
+    </footer>
+</body>
+
+</html>

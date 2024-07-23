@@ -1,0 +1,143 @@
+.submit-review-title {
+    color: #014040; 
+    padding: 40px 40px 20px 40px;
+}
+.title{
+    padding: 20px 40px 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.title input[type="text"] {
+    width: 60%; 
+    padding: 10px; 
+    font-size: 16px; 
+}
+.review {
+    padding: 20px 40px 20px 40px;
+    font-size: 24px;
+    font-weight: bold;
+}
+.review textarea {
+    width: 60%; 
+    padding: 10px;
+    font-size: 16px; 
+}
+.upload-photo input[type="file"] {
+    display: none; 
+}
+.upload-photo label {
+    background-color: #014040; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: 0px 40px 20px 40px;
+}
+.upload-photo label:hover {
+    background-color: #026565; 
+.rating-container {
+    padding: 20px 40px 20px 40px;
+}
+}
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end; 
+.star-rating input[type="radio"] {
+    display: none;
+}
+}
+
+.star-rating label {
+    font-size: 60px;
+    color: #ccc;
+    cursor: pointer;
+
+}
+.star-rating label:before {
+    content: '\2605';
+}
+.star-rating input[type="radio"]:checked ~ label {
+    color: #F27405;
+}
+.amenities-section {
+    border-top: 8px solid #F25C05;
+    border-bottom: 8px solid #F25C05;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+}
+.amenities {
+    margin: 20px;
+}
+.facilities {
+    margin: 20px;
+}
+.facilities h3 {
+    color: #4D5934;
+}
+.checkbox-group {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 20px;
+    grid-gap: 10px;
+}
+.acknowledge {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 80px;
+    color: #014040;
+    font-size: 20px;
+}
+label {
+    margin: 16px;
+}
+.submit-button {
+    background-color: #026565;
+    color: #ffffff;
+    border: none;
+    font-size: 32px;
+    padding: 20px 200px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #338585;
+}
+.submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 80px;
+}
+@media only screen and (max-width: 1035px) {
+    .submit-button-container {
+        display: flex;
+
+    }
+    .checkbox-group {
+        display: flex;
+        font-size: 20px;
+        grid-gap: 10px;
+        flex-direction: column;
+    }
+    .submit-button {
+        background-color: #026565;
+        color: #ffffff;
+        border: none;
+        font-size: 32px;
+        padding: 20px 200px
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .submit-button-container {
+        display: flex;
+        justify-content: center;
+        padding: 80px;
+    }
+}
+
+
+    
