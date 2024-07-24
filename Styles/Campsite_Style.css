@@ -1,8 +1,9 @@
 .main-image img {
-    max-width: 100%; 
+    max-width: 30%; 
     height: auto; 
-    border-radius: 8px; 
+    border-radius: 60px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border: 8px, solid, #F25C05;
 
 }
 .small-images {

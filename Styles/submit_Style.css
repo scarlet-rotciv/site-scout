@@ -11,6 +11,8 @@
     width: 60%; 
     padding: 10px; 
     font-size: 16px; 
+    border: 2px solid #ccc;
+    border-radius: 16px;
 }
 .review {
     padding: 20px 40px 20px 40px;
@@ -20,7 +22,9 @@
 .review textarea {
     width: 60%; 
     padding: 10px;
-    font-size: 16px; 
+    font-size: 16px;
+    border: 2px solid #ccc; 
+    border-radius: 16px;
 }
 .upload-photo input[type="file"] {
     display: none; 
@@ -42,12 +46,11 @@
 .star-rating {
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-end; 
+    justify-content: flex-end;
+} 
 .star-rating input[type="radio"] {
     display: none;
 }
-}
-
 .star-rating label {
     font-size: 60px;
     color: #ccc;
@@ -138,6 +141,50 @@ label {
         padding: 80px;
     }
 }
-
-
+.search-container {
+    margin: 20px 40px;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+.search-form {
+    display: flex;
+    align-items: center;
+}
+.search-input {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #014040;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.search-button:hover {
+    background-color: #026565;
+}
+.search-container button {
+    border-radius: 16px;
+    background-color: #014040;
+    color: #ffffff;
+}
+.search-container input{
+    border-radius: 16px;
+}
+.search-button:hover {
+    background-color: #026565;
+    color: #ffffff;
+}
+.h2{
+    font-size: 24px;
+    font-weight: bold;
+}
     
