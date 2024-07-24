@@ -1,4 +1,5 @@
 .main-image img {
+    max-width: 30%;
     height: auto; 
     border-radius: 60px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
